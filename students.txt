@@ -1,2 +1,1 @@
-01,Ahammed sameer,21,BSC COMPUTER SCIENCE,50.0
-02,Ahad,20,Abc,51.0
+5,,20,sameer,70.0
