@@ -7,13 +7,22 @@ def bar_chart(df):
         print("Load data first.")
         return
 
+    print("\nAvailable Columns:")
+    print(list(df.columns))
+
+    column = input("\nEnter column name for Bar Chart: ")
+
+    if column not in df.columns:
+        print("Invalid column name!")
+        return
+
     plt.figure(figsize=(8,5))
 
-    df['bedrooms'].value_counts().plot(kind='bar')
+    df[column].value_counts().plot(kind='bar')
 
-    plt.title("Number of Houses by Bedrooms")
+    plt.title(f"Bar Chart of {column}")
 
-    plt.xlabel("Bedrooms")
+    plt.xlabel(column)
 
     plt.ylabel("Count")
 

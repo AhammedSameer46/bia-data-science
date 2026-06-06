@@ -6,9 +6,9 @@ df = None
 
 while True:
 
-    print("\n" + "=" * 35)
+    print("\n===================================")
     print("      CSV DATA ANALYSIS TOOL")
-    print("=" * 35)
+    print("===================================")
 
     print("1. Load CSV File")
     print("2. Show Summary Statistics")
@@ -23,34 +23,41 @@ while True:
         df = load_csv("Housing(in).csv")
 
         if df is not None:
-            print("Dataset loaded successfully!")
+            print("\nDataset loaded successfully!")
+            print("Rows:", df.shape[0])
+            print("Columns:", df.shape[1])
+
+        else:
+            print("\nFailed to load dataset.")
 
     elif choice == "2":
 
         if df is None:
-            print("Please load the CSV file first.")
+            print("\nPlease load the CSV file first.")
         else:
             show_statistics(df)
 
     elif choice == "3":
 
         if df is None:
-            print("Please load the CSV file first.")
+            print("\nPlease load the CSV file first.")
         else:
+            print("\nGenerating Bar Chart...")
             bar_chart(df)
 
     elif choice == "4":
 
         if df is None:
-            print("Please load the CSV file first.")
+            print("\nPlease load the CSV file first.")
         else:
+            print("\nGenerating Heat Map...")
             heat_map(df)
 
     elif choice == "5":
 
-        print("Thank you for using CSV Data Analysis Tool.")
+        print("\nThank you for using CSV Data Analysis Tool.")
         break
 
     else:
 
-        print("Invalid choice. Please enter a number between 1 and 5.")
+        print("\nInvalid choice. Please enter a number between 1 and 5.")
