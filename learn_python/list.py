@@ -70,3 +70,14 @@ numbers=[5,2,9,1,3]
 numbers.sort()
 for num in numbers:
     print(num)
+
+
+
+## sum in list
+
+numbers=[5,2,9,1,3]
+total=0
+
+for num in numbers:
+    total+=num
+print(total)
