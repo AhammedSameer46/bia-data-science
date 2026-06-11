@@ -53,4 +53,20 @@ print(fruits.count("apple"))
 #index()
 
 fruits=["apple","banana","orange","apple"]
-print(fruits.index("banana"))
+##print(fruits.index("banana"))
+
+
+# looping through a list
+
+students=["Ahammed","Sameer","Ahad",]
+for student in students:
+    print(student)##
+
+
+
+# looping through a numbers in a list
+
+numbers=[5,2,9,1,3]
+numbers.sort()
+for num in numbers:
+    print(num)
