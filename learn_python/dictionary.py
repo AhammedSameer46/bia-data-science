@@ -1,4 +1,4 @@
-students={
+"""students={
     "name":"Ahammed",
     "age":25,
     "city":"Kerala",
@@ -9,4 +9,19 @@ students={
 }
 
 
-print(students["name"])
+print(students["name"])"""
+
+
+
+## Adding new key-value pair to the dictionary
+students={
+    "name":"Ahammed",
+    "age":25,
+    "city":"Kerala",
+    "country":"India",
+    "hobbies":["coding","traveling","cooking"],
+    "education":"Bachelor's in Computer Science",
+    "bike":"ktm",
+}
+students["job"]="Data Scientist"
+print(students["job"])
