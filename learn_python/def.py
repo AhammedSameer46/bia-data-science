@@ -72,6 +72,10 @@ def personal_info():
         "machine learning":"intermediate"
     }
 
-    print("My name is ",bio_data["name"],"and my age is ",bio_data["age"],"and I am studying ",bio_data["course"])
+
+    for key, value in bio_data.items():
+                    print(key, ":", value)
+
+                    print("My name is ",bio_data["name"],"and my age is ",bio_data["age"],"and I am studying ",bio_data["course"])
     print("My python skill level is ",data_scinece["python"])
-personal_info()
+    personal_info()
