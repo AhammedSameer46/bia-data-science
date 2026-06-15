@@ -53,3 +53,25 @@ def show_students():
         print(student)
 
 show_students()
+
+
+
+
+
+def personal_info():
+    bio_data={
+        "name":"Ahammed",
+        "age":21,
+        "course":"computer science"
+    }
+
+    data_scinece={
+        "python":"intermediate",
+        "numpy":"beginner",
+        "pandas":"beginner",
+        "machine learning":"intermediate"
+    }
+
+    print("My name is ",bio_data["name"],"and my age is ",bio_data["age"],"and I am studying ",bio_data["course"])
+    print("My python skill level is ",data_scinece["python"])
+personal_info()
