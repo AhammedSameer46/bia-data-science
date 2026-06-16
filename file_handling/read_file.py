@@ -5,15 +5,9 @@ print(content)
 
 
 
-## TO Write a File
-with open ("file_handling/student.txt",'w') as file:
-        file.write("Ahad")
 
+## Mini Challenge
 
-
-## Append (a)
-
-with open ("file_handling/student.txt",'a') as file:
-        file.write("\nComputer Science")
-
-
+"""name=input("Enter your name:")
+with open("file_handling/student.txt",'a') as file:
+       file.write(name + "\n")"""
