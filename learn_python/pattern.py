@@ -48,3 +48,10 @@ for row in range(5):
     for col in range(1,7-row):
         print(col,end="")
     print()'''
+
+
+
+
+
+for i in range(5):
+    print(i)
